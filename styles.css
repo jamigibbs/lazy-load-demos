@@ -6,6 +6,17 @@ p {
   line-height: 1.6
 }
 
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+a:hover {
+  color: #ff3a3a;
+}
+
 header {
   display: flex;
   flex-direction: column;
