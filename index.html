@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Lazy Load Demos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css"
+  media="screen" href="styles.css" />
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Lazy Load Demos</h1>
+    <p>Lazy loading techniques for images and videos using <a href="https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver" target="_blank">intersection observer</a> with fallback support for cross-browser compatibility.</p>
+  </header>
+
+  <div class="container">
+
+    <h2>Standard Images</h2>
+
+    <div class="images-example">
+      <img class="lazy" src="media/img/placeholder.png" data-src="media/img/90-jiang-786853-unsplash.jpg" alt="90-jiang-786853-unsplash">
+      <img class="lazy" src="media/img/placeholder.png" data-src="media/img/chris-lawton-785022-unsplash.jpg" alt="chris-lawton-785022-unsplash">
+      <img class="lazy" src="media/img/placeholder.png" data-src="media/img/clay-banks-786174-unsplash.jpg" alt="clay-banks-786174-unsplash">
+      <img class="lazy" src="media/img/placeholder.png" data-src="media/img/dean-rose-786763-unsplash.jpg" alt="dean-rose-786763-unsplash">
+      <img class="lazy" src="media/img/placeholder.png" data-src="media/img/fachy-marin-786443-unsplash.jpg" alt="fachy-marin-786443-unsplash">
+      <img class="lazy" src="media/img/placeholder.png" data-src="media/img/jd-mason-786116-unsplash.jpg" alt="jd-mason-786116-unsplash">
+    </div>
+
+    <h2>Background Images</h2>
+
+    <div class="background-images-example">
+      <div class="lazy-background a"></div>
+      <div class="lazy-background b"></div>
+      <div class="lazy-background c"></div>
+    </div>
+
+    <h2>Video</h2>
+
+    <div class="videos-example">
+      <video class="lazy" autoplay muted loop playsinline controls width="610" height="254" poster='media/video/preview.png'>
+        <source data-src='http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4' type='video/mp4'>
+      </video>
+    </div>
+
+  </div>
+
+  <footer>Images via <a href="https://unsplash.com/">Unsplash</a></footer>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  line-height: 1.6
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #efefef;
+  margin: 1rem 1rem 5rem 1rem;
+}
+
+header p {
+  padding: 0 15rem;
+  text-align: center;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.images-example {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 10px;
+}
+
+.images-example img {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.container h2 {
+  margin: 8rem 0;
+  text-align: center;
+}
+
+
+.lazy-background {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 3rem;
+  background-image: url('media/img/placeholder.png');
+}
+
+.lazy-background.visible.a {
+  background: no-repeat center/100% url('media/img/john-t-785967-unsplash.jpg');
+}
+
+.lazy-background.visible.b {
+  background: no-repeat center/100% url('media/img/sandro-kradolfer-785979-unsplash.jpg');
+}
+
+.lazy-background.visible.c {
+  background: no-repeat center/100% url('media/img/joran-quinten-786475-unsplash.jpg');
+}
+
+video {
+  height: 400px;
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 5rem 0 1rem 0;
+}
